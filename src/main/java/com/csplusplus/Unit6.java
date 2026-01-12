@@ -5,26 +5,23 @@ public class Unit6 {
     // 1. Implement a method that takes an array of integers and returns the sum of all elements.
     // Instructions: Use a for-each loop to iterate through the array and calculate the sum.
     public static int sumArray(int[] array) {
-        // TODO: Implement this method
         int sum = 0;
         for (int num : array ){
             sum += num;
-     
         }
-        return sum;  // Return the calculated sum.
+        return sum;
     }
 
     // 2. Implement a method that finds the maximum element in an array of integers.
     // Instructions: Iterate through the array and track the largest number found.
-    public static int maxElement(int[] array) {
-        // TODO: Implement this method
+    public static int maxElement(int[] array) {       
         int max = Integer.MIN_VALUE;
         for (int num : array) {
             if(num > max ) {
                 max = num; 
             }
         }
-        return max;  // Placeholder return value, replace with the correct maximum element.
+        return max;
     }
 
     // 3. Implement a method that takes an array and returns a new array with the elements in reverse order.
@@ -34,8 +31,7 @@ public class Unit6 {
         for (int i = 0; i < array.length;i++){
             reversed[i] = array [array.length - 1 - i];
         }
-        // TODO: Implement this method
-        return reversed;  // Placeholder return value, replace with the reversed array.
+        return reversed; 
     }
 
     // 4. Implement a method that checks whether the given array is sorted in ascending order.
@@ -56,7 +52,6 @@ public class Unit6 {
                 count++;
             }
         }
-        // TODO: Implement this method
-        return count;  // Placeholder return value, replace with the correct count.
+        return count; 
     }
 }
