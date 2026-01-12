@@ -9,6 +9,7 @@ public class Unit6 {
         int sum = 0;
         for (int num : array ){
             sum += num;
+     
         }
         return sum;  // Return the calculated sum.
     }
@@ -40,16 +41,13 @@ public class Unit6 {
     // 4. Implement a method that checks whether the given array is sorted in ascending order.
     // Instructions: Iterate through the array and check if each element is greater than or equal to the previous element.
     public static boolean isSorted(int[] array) {
-        for (int i = 0 ; 1< array.length -1 ; i++){
+        for (int i = 0 ; i < array.length -1 ; i++){
             if (array[i] > array[i + 1]){
                 return false;
             }
         }
-        // TODO: Implement this method
-        return true;  // Placeholder return value, replace with the correct boolean.
+        return true;
     }
-
-    // 5. Implement a method that counts how many times a given number appears in the array.
     // Instructions: Use a for-each loop to iterate through the array and count the occurrences of the given number.
     public static int countOccurrences(int[] array, int number) {
         int count = 0;
